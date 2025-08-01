@@ -94,7 +94,7 @@ async function buildWorker() {
             transformObjectKeys: true,
             renameGlobals: true,
             deadCodeInjection: true,
-            deadCodeInjectionThreshold: 0.2,
+            deadCodeInjectionThreshold: 0.3,
             target: "browser"
         });
     
