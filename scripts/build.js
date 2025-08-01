@@ -60,7 +60,7 @@ async function buildWorker() {
         write: false,
         external: ['cloudflare:sockets'],
         platform: 'browser',
-        target: 'es2020',
+        target: 'es2022',
         define: {
             __PANEL_HTML_CONTENT__: htmls['panel'] ?? '""',
             __LOGIN_HTML_CONTENT__: htmls['login'] ?? '""',
@@ -94,7 +94,7 @@ async function buildWorker() {
             transformObjectKeys: true,
             renameGlobals: true,
             deadCodeInjection: true,
-            deadCodeInjectionThreshold: 0.3,
+            deadCodeInjectionThreshold: 0.1,
             target: "browser"
         });
     
