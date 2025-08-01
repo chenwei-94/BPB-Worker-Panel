@@ -43,7 +43,7 @@ async function processHtmlPages() {
         result[dir] = JSON.stringify(minifiedHtml);
     }
 
-    console.log('✅ Assets bundled successfuly!'静态资产捆绑成功！);
+    console.log('✅ Assets bundled successfuly! 静态资产捆绑成功！');
     return result;
 }
 
