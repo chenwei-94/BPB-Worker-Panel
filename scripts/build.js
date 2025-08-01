@@ -43,7 +43,7 @@ async function processHtmlPages() {
         result[dir] = JSON.stringify(minifiedHtml);
     }
 
-    console.log('✅ Assets bundled successfuly!');
+    console.log('✅ Assets bundled successfuly!'静态资产捆绑成功！);
     return result;
 }
 
@@ -70,7 +70,7 @@ async function buildWorker() {
         }
     });
     
-    console.log('✅ Worker built successfuly!');
+    console.log('✅ Worker built successfuly! worker.js构建成功');
 
     let finalCode;
     if (devMode) {
@@ -83,7 +83,7 @@ async function buildWorker() {
             }
         });
     
-        console.log('✅ Worker minified successfuly!');
+        console.log('✅ Worker minified successfuly! worker.js压缩成功');
     
         const obfuscationResult = obfs.obfuscate(minifiedCode.code, {
             stringArrayThreshold: 1,
@@ -98,7 +98,7 @@ async function buildWorker() {
             target: "browser"
         });
     
-        console.log('✅ Worker obfuscated successfuly!');
+        console.log('✅ Worker obfuscated successfuly! worker.js混淆成功');
         finalCode = obfuscationResult.getObfuscatedCode();
     }
 
