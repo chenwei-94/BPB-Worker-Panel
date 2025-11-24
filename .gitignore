@@ -2,7 +2,7 @@
 !.gitignore
 !package.json
 !tsconfig.json
-!wrangler.jsonc
+!wrangler.toml
 !src/
 !src/**
 !scripts/

@@ -157,6 +157,7 @@ async function buildWorker() {
     const worker = `${buildInfo}// @ts-nocheck\n${finalCode}`;
     mkdirSync(DIST_PATH, { recursive: true });
     writeFileSync('./dist/worker.js', worker, 'utf8');
+    writeFileSync('./dist/_worker.js', worker, 'utf8');
 
     const zip = new JSZip();
     zip.file('_worker.js', worker);
