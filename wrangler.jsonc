@@ -1,0 +1,5 @@
+{
+  "name": "bpb-worker-panel",
+  "main": "dist/worker.js",
+  "compatibility_date": "2025-11-24"
+}
